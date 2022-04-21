@@ -1,0 +1,95 @@
+body {
+    background-color: #66ccff;
+    margin: auto;
+    width: 80%;
+    font-family: monospace;
+    margin-bottom: 1%;
+    color: #062546;
+}
+
+nav {
+    margin: auto;
+    width: 80%;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    background-color: #f5faff;
+    z-index: 2;
+    font-size: 1.5em;
+    border: 5px double #062546;
+    text-align: center;
+}
+
+.fa-brands {
+    position: sticky;
+    top: 0px;
+}
+
+a {
+    color: #062546;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #147ceb;
+}
+
+a:hover {
+    color: #1063bc;
+}
+
+a.easter-egg {
+    color: #f5faff;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+    font-family: Anton;
+}
+
+table {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin: auto;
+    width: 80%;
+}
+
+td {
+    text-align: center;
+    border: 2px solid black;
+    background-color: #cceeff;
+    height: 90px;
+}
+
+.WoD {
+    text-align: center;
+    height: 55px;
+    font-size: 2em;
+    background-color: #e8f2fd;
+}
+
+th {
+    border: 2px dashed black;
+    font-size: 4em;
+    background-color: #8de2ff;
+    height: 90px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+.easteregg {
+    font-size: 0.2em;
+    color: #62c0ef;
+    text-align: center;
+    position: fixed;
+    bottom: 1;
+}
