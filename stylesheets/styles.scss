@@ -1,24 +1,29 @@
-* {
-    margin: auto;
-    padding: auto;
-    font-family: monospace;
+@import '_base.scss';
+@mixin palette ($background-color) {
+    background-color: $background-color;
     color: #062546;
+}
+
+* {
+    margin: $auto;
+    padding: $auto;
+    font-family: monospace;
     text-align: center;
 }
 
 body {
-    width: 80%;
-    margin-bottom: 1%;
-    background-color: #66ccff;
+    width: $width80;
+    margin-bottom: $mpercent;
+    @include palette (#66ccff);
 }
 
 nav {
-    margin: auto;
-    width: 80%;
+    margin: $auto;
+    width: $width80;
     padding: 5px;
     position: sticky;
     top: 0;
-    background-color: #f5faff;
+    @include palette(#f5faff);
     z-index: 2;
     font-size: 1.5em;
     border: 5px double #062546;
@@ -48,34 +53,34 @@ a.easter-egg {
 
 h1 {
     font-size: 3.5em;
-    margin-top: 1%;
+    margin-top: $mpercent;
     margin-bottom: 1.5%;
     font-family: Anton;
 }
 
 table {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin: auto;
-    width: 80%;
+    margin-top: $mpercent;
+    margin-bottom: $mpercent;
+    margin: $auto;
+    width: $width80;
 }
 
 td {
     border: 2px solid black;
-    background-color: #cceeff;
+    @include palette (#cceeff);
     height: 90px;
 }
 
 .WoD {
     height: 55px;
     font-size: 2em;
-    background-color: #e8f2fd;
+    @include palette(#e8f2fd);
 }
 
 th {
     border: 2px dashed black;
     font-size: 4em;
-    background-color: #8de2ff;
+    @include palette (#8de2ff);
     height: 90px;
 }
 
@@ -83,7 +88,7 @@ footer {
     font-size: 0.8em;
     color: white;
     margin-top: 0%;
-    margin-bottom: 1%;
+    margin-bottom: $mpercent;
 }
 
 .easteregg {
